@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import StaticDatePickerDemo from "../../components/Calendar/Calendar";
-import NextEvent from "../../components/NexEvent/NextEvent";
-import Schedule from "../../components/Schedule/Schedule";
+import NextEvent from "../../components/NexEvent/index";
+import Schedule from "../../components/Schedule";
 import Style from "../../styles/MainContent.module.scss";
 
 const timeSchedule = () => {
@@ -14,6 +14,7 @@ const timeSchedule = () => {
 
 export default function MainContent() {
     const [arrayTime, setArrayTime] = useState(timeSchedule);
+    useEffect(() => setArrayTime(timeSchedule), []);
     return (
         <div className={Style.container}>
             <div className={Style.calendar}>

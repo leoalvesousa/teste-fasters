@@ -1,0 +1,69 @@
+.Modal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 30px;
+    position: relative;
+    background-color: white;
+
+    .items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        align-items: center;
+        height: 400px;
+        width: 750px;
+    }
+    .time {
+        border: none;
+        background-color: #ece8e8d6;
+        width: 80px;
+        height: 40px;
+        outline: none;
+        color: #928d8d;
+        border-radius: 6px;
+    }
+    .title {
+        border: none;
+        background-color: #ece8e8d6;
+        width: calc(100% - 36px);
+        height: 40px;
+        outline: none;
+        color: #928d8d;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .description {
+        border: none;
+        background-color: #ece8e8d6;
+        width: 900px;
+        height: 40px;
+        outline: none;
+        color: #928d8d;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .date {
+        border: none;
+        background-color: #ece8e8d6;
+        width: 170px;
+        height: 40px;
+        outline: none;
+        color: #928d8d;
+        font-size: 18px;
+        border-radius: 12px;
+    }
+    button {
+        position: absolute;
+        right: 33px;
+        top: 20px;
+        border: none;
+        outline: none;
+        color: black;
+    }
+}

@@ -1,11 +1,14 @@
 import Image from "next/image";
+import { useState } from "react";
 import bellImg from "../../assets/bell.svg";
 import iconImg from "../../assets/icon.svg";
 import searchImg from "../../assets/search.svg";
-
+import ContentModal from "../../components/ContentModal/ContentModal";
+import Modal from "../../components/Modal/Modal";
 import Style from "../../styles/Header.module.scss";
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <div className={Style.container}>
             <div className={Style.wrapDate}>
@@ -13,7 +16,13 @@ export default function Header() {
                 <h3>Quinta-Feira - 4 de Janeiro - 2022</h3>
             </div>
             <div className={Style.wrapButtons}>
-                <button className={Style.eventButtons}> + Create event</button>
+                <button className={Style.eventButtons} onClick={() => setIsOpen(true)}>
+                    + Create event
+                </button>
+                <Modal open={isOpen}>
+                    <ContentModal onClose={() => setIsOpen(false)} />
+                </Modal>
+
                 <div className={Style.search}>
                     <button>
                         <Image className='img' src={searchImg} />

@@ -1,12 +1,16 @@
 import "react-calendar/dist/Calendar.css";
 import Agenda from "react-calendar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Calendar() {
-    const [value, onChange] = useState(new Date());
+    const [dateState, setDateState] = useState(new Date());
+    useEffect((e) => setDateState(e), []);
+    const changeDate = (e) => {
+        setDateState(e);
+    };
     return (
         <div>
-            <Agenda onChange={onChange} value={value} />
+            <Agenda onChange={changeDate} value={dateState} />
         </div>
     );
 }
