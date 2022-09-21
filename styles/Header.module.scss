@@ -1,0 +1,86 @@
+.container {
+    padding: 40px 30px;
+    width: 100%;
+    height: 139px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    .wrapDate {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        h1 {
+            margin: 0px;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: left;
+            width: 300px;
+            height: 30px;
+        }
+        h3 {
+            margin: 0px;
+            font-size: small;
+            color: #aeaeae;
+            font-family: DM Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            width: 300px;
+            height: 21px;
+        }
+    }
+    .wrapButtons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        gap: 16px;
+        .eventButtons {
+            width: 144px;
+            height: 38px;
+            background-color: #4ca7a8;
+            border-radius: 6px;
+            border: none;
+            color: white;
+        }
+        .search {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 56px;
+            width: 460px;
+            background-color: #fafafa;
+            border-radius: 12px;
+            button {
+                background-color: transparent;
+                border: none;
+                img {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+            input {
+                border: none;
+                background-color: #fafafa;
+                width: calc(100% - 36px);
+                height: 21px;
+                outline: none;
+                color: #aeaeae;
+            }
+        }
+        .buttons {
+            height: 56px;
+            width: 56px;
+            background-color: transparent;
+            border: none;
+            padding: 0px;
+        }
+    }
+}
