@@ -33,6 +33,7 @@ export default function ContentModal({ onClose }) {
 
     function save() {
         setEvents([...events, event]);
+        onClose();
     }
 
     useEffect(() => {
