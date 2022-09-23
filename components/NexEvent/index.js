@@ -11,7 +11,7 @@ export default function NextEvent({ items }) {
                         <h2>{item.title}</h2>
                         <h3> {item.date}</h3>
                         <div className={Style.clock}>
-                            <Image src={clockImg} />
+                            <Image src={clockImg} alt='' />
                             <span>
                                 {item.timeStart} - {item.timeEnd}
                             </span>

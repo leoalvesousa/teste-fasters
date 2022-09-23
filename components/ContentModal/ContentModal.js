@@ -110,7 +110,7 @@ export default function ContentModal({ onClose }) {
                 </div>
 
                 <button onClick={onClose}>
-                    <Image className={Style.xImg} src={xImg} />
+                    <Image className={Style.xImg} src={xImg} alt='' />
                 </button>
                 <button className={Style.save} onClick={save} disabled={event?.title === ""}>
                     Salvar

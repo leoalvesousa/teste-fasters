@@ -8,7 +8,7 @@ import System from "../../components/System";
 export default function LeftMenu() {
     return (
         <div className={Style.container}>
-            <Image src={fasterImg} />
+            <Image src={fasterImg} alt='' />
             <ListMenu />
             <h3>MyAccount</h3>
             <MyAccount />
