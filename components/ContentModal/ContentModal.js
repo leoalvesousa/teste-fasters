@@ -33,7 +33,6 @@ export default function ContentModal({ onClose }) {
 
     function save() {
         setEvents([...events, event]);
-        onClose();
     }
 
     useEffect(() => {
@@ -54,8 +53,6 @@ export default function ContentModal({ onClose }) {
                 // always executed
             });
     }, []);
-
-    console.log(event.title === "");
 
     return (
         <div className={Style.Modal}>
