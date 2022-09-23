@@ -6,7 +6,7 @@ export default function NextEvent({ items }) {
     return (
         <>
             {items.map((item, index) => (
-                <div className={Style.container}>
+                <div key={index} className={Style.container}>
                     <div className={Style.event}>
                         <h2>{item.title}</h2>
                         <h3> {item.date}</h3>

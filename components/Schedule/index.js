@@ -1,5 +1,5 @@
 import Style from "../../styles/Schedule.module.scss";
-import NewSchedule from "../NewSchedule/NewSchedule";
+import NewSchedule from "../NewSchedule/index";
 export default function Schedule(props) {
     return (
         <div className={Style.container}>

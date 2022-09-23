@@ -3,7 +3,7 @@ import Style from "../../styles/ContentModal.module.scss";
 import xImg from "../../assets/x.svg";
 import NextEvent from "../../components/NexEvent/index";
 import { useEffect, useState } from "react";
-import NewSchedule from "../NewSchedule/NewSchedule";
+import NewSchedule from "../NewSchedule";
 import axios from "axios";
 
 export default function ContentModal({ onClose }) {
