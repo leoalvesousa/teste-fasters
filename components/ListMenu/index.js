@@ -9,15 +9,15 @@ export default function ListMenu() {
         <div className={Style.container}>
             <ul>
                 <li>
-                    <Image className='img' src={calendarImg} />
+                    <Image src={calendarImg} />
                     <span>Agenda</span>
                 </li>
                 <li>
-                    <Image className='img' src={messageImg} />
+                    <Image src={messageImg} />
                     <span>Mensagens</span>
                 </li>
                 <li>
-                    <Image className='img' src={reportImg} />
+                    <Image src={reportImg} />
                     <span>Relatórios</span>
                 </li>
             </ul>

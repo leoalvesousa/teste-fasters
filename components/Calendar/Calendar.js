@@ -10,7 +10,7 @@ export default function Calendar() {
     };
     return (
         <div>
-            <Agenda onChange={changeDate} value={dateState} />
+            <Agenda onChange={changeDate} value={dateState} onClickDay={(e) => console.log(e)} />
         </div>
     );
 }

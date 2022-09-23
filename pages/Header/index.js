@@ -25,7 +25,7 @@ export default function Header() {
 
                 <div className={Style.search}>
                     <button>
-                        <Image className='img' src={searchImg} />
+                        <Image src={searchImg} />
                     </button>
                     <input placeholder='Search task, event, calendar ' />
                 </div>

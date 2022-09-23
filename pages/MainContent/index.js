@@ -15,17 +15,26 @@ const timeSchedule = () => {
 export default function MainContent() {
     const [arrayTime, setArrayTime] = useState(timeSchedule);
     useEffect(() => setArrayTime(timeSchedule), []);
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const data = [];
+        const dados = JSON.parse(localStorage.getItem("Eventos"));
+
+        for (const key in dados) data.push(dados[key]);
+        setData(data);
+    }, []);
+
     return (
         <div className={Style.container}>
             <div className={Style.calendar}>
                 <StaticDatePickerDemo />
                 <h2>Next Event</h2>
                 <div className={Style.allEvents}>
-                    <NextEvent />
-                    <NextEvent />
-                    <NextEvent />
-                    <NextEvent />
-                    <NextEvent />
+                    <div className={Style.allEvents}>
+                        <NextEvent items={data} />
+                    </div>
                 </div>
             </div>
 

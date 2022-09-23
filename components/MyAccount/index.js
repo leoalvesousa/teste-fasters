@@ -9,15 +9,15 @@ export default function MyAccount() {
         <div className={Style.container}>
             <ul>
                 <li>
-                    <Image className='img' src={profileImg} />
+                    <Image src={profileImg} />
                     <span>Meus Eventos</span>
                 </li>
                 <li>
-                    <Image className='img' src={peopleImg} />
+                    <Image src={peopleImg} />
                     <span>Meu Time</span>
                 </li>
                 <li>
-                    <Image className='img' src={boardImg} />
+                    <Image src={boardImg} />
                     <span>Minhas Atividades</span>
                 </li>
             </ul>

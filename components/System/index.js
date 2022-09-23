@@ -9,11 +9,11 @@ export default function System() {
             <h3>System</h3>
             <ul>
                 <li>
-                    <Image className='img' src={settingImg} />
+                    <Image src={settingImg} />
                     <span>Configurações</span>
                 </li>
                 <li>
-                    <Image className='img' src={logoutImg} />
+                    <Image src={logoutImg} />
                     <span>Sair</span>
                 </li>
             </ul>
