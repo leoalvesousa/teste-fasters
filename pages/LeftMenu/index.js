@@ -1,7 +1,7 @@
 import Style from "../../styles/LeftMenu.module.scss";
 import Image from "next/image";
 import fasterImg from "../../assets/Group1.svg";
-import ListMenu from "../../components/listMenu";
+import ListMenu from "../../components/ListMenu";
 import MyAccount from "../../components/MyAccount";
 import System from "../../components/System";
 
